@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+ int main()
+ {
+     int distance , meters ,cm ;
+     float feet, inches;
+     printf("Enter the distance between two cities :");
+     scanf("%d",&distance);
+     meters = distance*1000;
+     feet = distance*3280.84;
+     inches = distance*39370.1;
+     cm = distance*100000;
+     printf(" Equivalent distance in meters = %d \n Equivalent distance in Feet= %f \n  Equivalent distance in Inches = %f \n  Equivalent distance in CM = %d ",meters,feet,inches,cm);
+     return 0;
+     
+ }
