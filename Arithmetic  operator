@@ -1,0 +1,20 @@
+//  Arithmetic Operators in c 
+#include<stdio.h>
+ 
+int main()
+{
+    int a,b;
+    printf(" Enter any value for a and b");
+    scanf("%d %d",&a,&b);
+    //addition 
+    printf("Addition is %d\n",a+b);
+    //subtraction
+    printf("Subtraction is %d\n",a-b);
+    //multiplication
+    printf("Multiplication is %d\n",a*b);
+    //division
+    printf("Division is %d\n",a/b);
+    //modulus
+    printf("Modulus is %d\n",a%b);
+    return 0;
+}
