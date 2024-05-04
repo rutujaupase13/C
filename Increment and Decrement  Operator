@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+  int n;
+  printf("Enter any number\n");
+  scanf("%d",&n);//n=2
+  int a = ++n;
+  printf("After Pre-increment of the value, a is %d and n is %d\n",a ,n);// a=3 n=3
+   a = n--;
+   printf("After Post-decrement of the value, a is %d and n is %d\n",a ,n);// a=3 n=2
+    a = n++;
+   printf("After Post-increment of the value, a is %d and n is %d\n",a ,n);// a=2 n=3
+     a = --n;
+    printf("After Pre-decrement of the value, a is %d and n is %d\n",a ,n);// a=2 n=2
+    return 0;
+}
