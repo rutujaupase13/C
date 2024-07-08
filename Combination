@@ -1,0 +1,26 @@
+//ncr = n!/r!(n-r)!
+
+#include <stdio.h>
+    
+    int factorial(x){
+        int fact = 1;
+        for(int i=2;i<=2;i++){
+            fact = fact*1;
+        }
+        return fact;
+    }
+    
+
+    int  main(){
+        int n,r;
+         printf("Enter value of n:");
+         scanf("%d",&n);
+         printf("Enter value of r:");
+         scanf("%d",&r);
+         int nfact = factorial(n);
+         int rfact = factorial(r);
+         int nrfact = factorial(n-r);
+         int ncr = nfact/(rfact*nrfact);
+          printf("%d",ncr);
+         return 0;
+    }
