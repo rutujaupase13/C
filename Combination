@@ -2,10 +2,10 @@
 
 #include <stdio.h>
     
-    int factorial(x){
+    int factorial(int x){
         int fact = 1;
         for(int i=2;i<=x;i++){
-            fact = fact*1;
+            fact = fact*i;
         }
         return fact;
     }
