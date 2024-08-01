@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+    int num1,num2, cal=0,ch;
+    int *ptr, *ptr1;
+    ptr = &num1;
+    ptr1 = &num2;
+    printf("Enter two values:");
+   scanf("%d %d",&ptr,&ptr1);
+    printf("Enter your choice 1 for addition,2 for substraction ,3 for multiplication ,4 for division :");
+   scanf("%d",&ch);
+   switch(ch){
+       case 1 : cal= *ptr+ *ptr1;
+                break;
+       case 2 : cal= *ptr - *ptr1;
+                break;
+       case 3 : cal= *ptr * *ptr1;
+                break;
+      case 4 : cal= *ptr / *ptr1;
+                break;
+       default :  printf("Enter correct choice");
+    }
+        printf("Value is %d",cal);
+
+    return 0;
+}
