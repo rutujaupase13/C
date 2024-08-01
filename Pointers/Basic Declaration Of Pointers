@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+   int val ;
+   printf("Enter the value:");
+   scanf("%d",&val);
+   int *ptr;
+   ptr = &val;
+   int **ptr1;
+   ptr1 = &ptr;
+   printf("value:%d\t",val);
+   printf("Address of value is stored :%u\n",&val);//%u used for printing the addresss
+    printf("value in pointer  : %d\t",ptr);
+    printf("Address of pointer : %u\n",&ptr);
+    printf("value in double pointer : %d\t",&ptr1);
+    printf("Address of  double pointer : %u",&ptr1);
+    return 0;
+}
