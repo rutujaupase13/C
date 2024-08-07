@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+ int fun(int num){
+     int res;
+     if(num == 0)
+        return 0;
+     else if (num==1)
+         return 1;
+    else
+      res =  num+fun(num-1);
+      
+    return res;
+ }
+int main() {
+    int num,sum;
+    printf("enter any number:");
+    scanf("%d",&num);
+    sum = fun(num);
+    printf("Sum of natural numbers is %d",sum);
+    return 0;
+}
