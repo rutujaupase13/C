@@ -1,20 +1,30 @@
 #include <stdio.h>
  int convert(int decNo){
-     static long binNo, r , factor = 1;
+     static long binNo = 0; 
+     static long factor = 1;
      if( decNo != 0){
-         r = decNo%2;
-         binNo = binNo + r * factor;
-         factor = factor * 10;
+        int r = decNo % 2;
+         binNo += r * factor;
+         factor *=10;
          convert(decNo / 2);
      }
      return binNo ;
  }
+
+
+ void reset(){
+     convert(0);
+ }
  int main(){
      int decNo;
      long binNo;
+     
      printf("Enter the decimal number: ");
-     scanf("%d",&decNo);
+     scanf("%d", &decNo);
+     
+      reset();  // Reset before converting
      binNo = convert(decNo);
-     printf("Binary Number is %ln",binNo);
+     
+     printf("Binary Number is %ld",binNo);
      return 0;
  }
